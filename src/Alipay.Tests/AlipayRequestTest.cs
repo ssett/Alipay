@@ -12,7 +12,7 @@ namespace Alipay.Tests
         [TestMethod]
         public void Create_DirectPay_Url()
         {
-            var config = new AlipayDirectPayConfig
+            var config = new DirectPayConfig
             {
                 Partner = "2088101568338364",
                 Key = "7d314d22efba4f336fb187697793b9d2",

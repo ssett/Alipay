@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Alipay;
 using System.Web;
 using Alipay.DirectPay;
+using Alipay.Services;
 
 namespace Alipay.Tests
 {
