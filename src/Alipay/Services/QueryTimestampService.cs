@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Alipay.QueryTimestamp;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -26,7 +27,8 @@ namespace Alipay.Services
         /// <returns></returns>
         public string GetEncryptKey()
         {
-            return new QueryTimestampRequest(this.Config).GetEncryptKey();
+            return new QueryTimestampRequest(this.Config)
+                .GetResponse().EncryptKey;
         }
     }
 }

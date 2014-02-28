@@ -57,6 +57,7 @@
     <Compile Include="Extensions\NameValueCollectionExtension.cs" />
     <Compile Include="INotify.cs" />
     <Compile Include="NotifyBase.cs" />
+    <Compile Include="QueryTimestamp\QueryTimestampResponse.cs" />
     <Compile Include="Services\IQueryTimestampService.cs" />
     <Compile Include="Services\NotifyService.cs" />
     <Compile Include="DirectPay\DirectPayBankRequest.cs" />
@@ -70,7 +71,7 @@
     <Compile Include="ISign.cs" />
     <Compile Include="PayNotifyBase.cs" />
     <Compile Include="PayRequestBase.cs" />
-    <Compile Include="QueryTimestampRequest.cs" />
+    <Compile Include="QueryTimestamp\QueryTimestampRequest.cs" />
     <Compile Include="Services\QueryTimestampService.cs" />
     <Compile Include="Trades\PartnerTradeNotify.cs" />
     <Compile Include="Trades\TradeNofityBase.cs" />

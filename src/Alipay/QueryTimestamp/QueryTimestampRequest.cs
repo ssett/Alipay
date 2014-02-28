@@ -5,15 +5,15 @@ using System.Text;
 using System.Xml;
 using Alipay.Extensions;
 
-namespace Alipay
+namespace Alipay.QueryTimestamp
 {
     /// <summary>
-    /// 表示用于获取时间戳的支付宝请求。
+    /// 表示支付宝防钓鱼时间戳服务的获取请求。
     /// </summary>
-    class QueryTimestampRequest : RequestBase
+    public class QueryTimestampRequest : RequestBase
     {
         /// <summary>
-        /// 初始化 Alipay.QueryTimestampRequest 类的新实例。
+        /// 初始化 Alipay.QueryTimestamp.QueryTimestampRequest 类的新实例。
         /// </summary>
         /// <param name="config">支付宝配置。</param>
         public QueryTimestampRequest(AlipayConfig config)
@@ -44,39 +44,13 @@ namespace Alipay
         }
 
         /// <summary>
-        /// 请求支付宝时间戳服务并返回时间戳密钥。
+        /// 返回服务的响应结果。
         /// </summary>
         /// <returns></returns>
-        public string GetEncryptKey()
+        public QueryTimestampResponse GetResponse()
         {
-            var url = this.CreateUrl();
-            var reader = new XmlTextReader(url);
-
-            return new QueryTimestampResponse(reader).EncryptKey;
+            return new QueryTimestampResponse(this);
         }
     }
 
-    class QueryTimestampResponse
-    {
-        private XmlNode _response;
-
-        internal QueryTimestampResponse(XmlTextReader reader)
-        {
-            var doc = new XmlDocument();
-            doc.Load(reader);
-            _response = doc;
-        }
-
-        internal QueryTimestampResponse(string responseXml)
-        {
-            var doc = new XmlDocument();
-            doc.LoadXml(responseXml);
-            _response = doc;
-        }
-
-        public string EncryptKey
-        {
-            get { return _response.SelectSingleNode("/alipay/response/timestamp/encrypt_key").InnerText; }
-        }
-    }
 }
