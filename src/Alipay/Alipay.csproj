@@ -51,7 +51,9 @@
     <Compile Include="AliBoolean.cs" />
     <Compile Include="AliDateTime.cs" />
     <Compile Include="DirectPay\DirectPayBankNotify.cs" />
+    <Compile Include="DirectPay\DirectPayConfig.cs" />
     <Compile Include="DirectPay\DirectPayNotifyBase.cs" />
+    <Compile Include="Extensions\NameValueCollectionExtension.cs" />
     <Compile Include="INotify.cs" />
     <Compile Include="NotifyBase.cs" />
     <Compile Include="NotifyService.cs" />

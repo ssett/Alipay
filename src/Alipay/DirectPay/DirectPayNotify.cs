@@ -5,6 +5,7 @@ using System.Text;
 using System.Net;
 using System.IO;
 using System.Collections.Specialized;
+using Alipay.Extensions;
 using Alipay.Validators;
 
 namespace Alipay.DirectPay
@@ -14,6 +15,18 @@ namespace Alipay.DirectPay
     /// </summary>
     public class DirectPayNotify : DirectPayNotifyBase, ISign, INotify
     {
+        private NameValueCollection nameValueCollection;
+        private DirectPayConfig config;
+
+        /// <summary>
+        /// 初始化 Alipay.DirectPay.DirectPayNotify 类的新实例。
+        /// </summary>
+        /// <param name="parameters">通知请求参数。</param>
+        /// <param name="config">支付宝默认配置。</param>
+        public DirectPayNotify(NameValueCollection parameters, DirectPayConfig config)
+            : this(parameters.ToDictionary(), config)
+        {
+        }
 
         /// <summary>
         /// 初始化 Alipay.DirectPay.DirectPayNotify 类的新实例。
