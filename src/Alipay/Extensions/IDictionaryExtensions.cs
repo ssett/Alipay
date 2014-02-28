@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Alipay
+namespace Alipay.Extensions
 {
     /// <summary>
     /// 提供 System.Collections.Generic.IDictionary 的扩展方法。
     /// </summary>
-    public static class IDictionaryExtensions
+    static class IDictionaryExtensions
     {
         /// <summary>
         /// 将 IDictionary 中的参数按参数名称排序。

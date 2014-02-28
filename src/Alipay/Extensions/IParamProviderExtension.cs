@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Net;
 
-namespace Alipay
+namespace Alipay.Extensions
 {
     /// <summary>
     /// 为 Pay.IParamProvider 参数字典提供扩展方法。
     /// </summary>
-    public static class IParamProviderExtension
+    static class IParamProviderExtension
     {
         /// <summary>
         /// 根据名称返回参数值。
