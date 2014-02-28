@@ -23,7 +23,6 @@ namespace Alipay
         {
             this.Partner = config.Partner;
             this.InputCharset = config.InputCharset;
-            this.ReturnUrl = config.ReturnUrl;
             this.SignType = config.SignType;
 
             this.RequestValidators = new List<IValidator>();
@@ -102,7 +101,7 @@ namespace Alipay
         public string ReturnUrl
         {
             get { return this.GetString("return_url"); }
-            protected set { this.Set("return_url", value, 200); }
+            set { this.Set("return_url", value, 200); }
         }
 
         #endregion

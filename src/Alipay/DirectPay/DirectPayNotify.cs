@@ -21,7 +21,7 @@ namespace Alipay.DirectPay
         /// </summary>
         /// <param name="parameters">通知请求参数。</param>
         /// <param name="config">支付宝默认配置。</param>
-        public DirectPayNotify(NameValueCollection parameters, DirectPayConfig config)
+        public DirectPayNotify(NameValueCollection parameters, AlipayConfig config)
             : this(parameters.ToDictionary(), config)
         {
         }

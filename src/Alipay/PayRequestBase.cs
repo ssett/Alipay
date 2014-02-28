@@ -41,7 +41,7 @@ namespace Alipay
         public string NotifyUrl
         {
             get { return this.GetString("notify_url"); }
-            protected set { this.Set("notify_url", value, 190); }
+            set { this.Set("notify_url", value, 190); }
         }
 
         #endregion

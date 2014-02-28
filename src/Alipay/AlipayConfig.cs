@@ -37,11 +37,6 @@ namespace Alipay
         public string SignType { get; set; }
 
         /// <summary>
-        /// 获取或设置页面跳转返回同步通知页面路径。
-        /// </summary>
-        public string ReturnUrl { get; set; }
-
-        /// <summary>
         /// 获取或设置字符编码。
         /// </summary>
         public string InputCharset { get; set; }
@@ -51,17 +46,5 @@ namespace Alipay
         /// </summary>
         public string Transport { get; set; }
     }
-
-    /// <summary>
-    /// 表示支付宝支付请求的配置。
-    /// </summary>
-    public class AlipayPayConfig : AlipayConfig
-    {
-        /// <summary>
-        /// 获取或设置服务器后台异步通知页面路径。
-        /// </summary>
-        public string NotifyUrl { get; set; }
-
-    }
-
+    
 }

@@ -14,12 +14,10 @@ namespace Alipay.DirectPay
         /// 初始化 Alipay.DirectPay.AlipayDirectPayRequestBase 类的新实例。
         /// </summary>
         /// <param name="config"></param>
-        public DirectPayRequestBase(DirectPayConfig config)
+        public DirectPayRequestBase(AlipayConfig config)
             : base(config)
         {
             this.Service = DirectPayRequestBase.ServiceName;
-            this.NotifyUrl = config.NotifyUrl;
-            this.ErrorNotifyUrl = config.ErrorNotifyUrl;
         }
 
 
