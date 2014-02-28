@@ -16,7 +16,7 @@ namespace Alipay.DirectPay
         /// 初始化 Alipay.AlipayRequest 类的新实例。
         /// </summary>
         /// <param name="config">支付宝默认配置。</param>
-        public DirectPayRequest(AlipayDirectPayConfig config)
+        public DirectPayRequest(DirectPayConfig config)
             : base(config)
         {
         }

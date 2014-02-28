@@ -16,7 +16,7 @@ namespace Alipay.DirectPay
         /// 初始化 Alipay.DirectPay.AlipayDirectPayBankRequest 类的新实例。
         /// </summary>
         /// <param name="config"></param>
-        public DirectPayBankRequest(AlipayDirectPayConfig config)
+        public DirectPayBankRequest(DirectPayConfig config)
             : base(config)
         {
         }
