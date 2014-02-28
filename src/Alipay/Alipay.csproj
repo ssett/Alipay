@@ -51,6 +51,9 @@
     <Compile Include="AliBoolean.cs" />
     <Compile Include="AliDateTime.cs" />
     <Compile Include="AlipayException.cs" />
+    <Compile Include="Auth\AuthorizeReturn.cs" />
+    <Compile Include="Auth\AuthorizeRequest.cs" />
+    <Compile Include="Auth\UserGrade.cs" />
     <Compile Include="DirectPay\DirectPayBankNotify.cs" />
     <Compile Include="DirectPay\DirectPayConfig.cs" />
     <Compile Include="DirectPay\DirectPayNotifyBase.cs" />

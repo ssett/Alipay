@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Alipay.Extensions;
 using Alipay.Validators;
 
 namespace Alipay.Auth
@@ -9,29 +10,29 @@ namespace Alipay.Auth
     /// <summary>
     /// 表示支付宝快速登录请求。
     /// </summary>
-    public class AlipayQuickLoginRequest : AlipayRequestBase, ISign
+    public class AuthorizeRequest : RequestBase, ISign
     {
         static readonly string ServiceName = "alipay.auth.authorize";
         static readonly string TargetServiceName = "user.auth.quick.login";
         static readonly string gateway = "https://mapi.alipay.com/gateway.do?";
 
         /// <summary>
-        /// 初始化 Alipay.Authentication.AlipayQuickLoginRequest 类的新实例。
+        /// 初始化 Alipay.Auth.AuthorizeRequest 类的新实例。
         /// </summary>
         /// <param name="config">支付宝配置。</param>
-        public AlipayQuickLoginRequest(AlipayConfig config)
+        public AuthorizeRequest(AlipayConfig config)
             : base(config)
         {
-            this.Service = AlipayQuickLoginRequest.ServiceName;
-            this.TargetService = AlipayQuickLoginRequest.TargetServiceName;
+            this.Service = AuthorizeRequest.ServiceName;
+            this.TargetService = AuthorizeRequest.TargetServiceName;
         }
 
         /// <summary>
-        /// 初始化 Alipay.Authentication.AlipayFastLoginRequest 类的新实例。
+        /// 初始化 Alipay.Auth.AlipayFastLoginRequest 类的新实例。
         /// </summary>
         /// <param name="config">支付宝配置。</param>
         /// <param name="returnUrl">页面跳转同步通知页面路径。</param>
-        public AlipayQuickLoginRequest(AlipayConfig config, string returnUrl)
+        public AuthorizeRequest(AlipayConfig config, string returnUrl)
             : this(config)
         {
             this.ReturnUrl = returnUrl;
