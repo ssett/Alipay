@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Alipay
+namespace Alipay.Services
 {
     /// <summary>
     /// 提供付款通知验证服务。

@@ -6,6 +6,7 @@ using System.Net;
 using System.IO;
 using System.Collections.Specialized;
 using Alipay.Extensions;
+using Alipay.Services;
 using Alipay.Validators;
 
 namespace Alipay.DirectPay

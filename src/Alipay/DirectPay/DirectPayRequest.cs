@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Alipay.Extensions;
+using Alipay.Services;
 
 namespace Alipay.DirectPay
 {
@@ -13,9 +14,9 @@ namespace Alipay.DirectPay
     {
 
         /// <summary>
-        /// 初始化 Alipay.AlipayRequest 类的新实例。
+        /// 初始化 Alipay.DirectPay.DirectPayRequest 类的新实例。
         /// </summary>
-        /// <param name="config">支付宝默认配置。</param>
+        /// <param name="config">支付宝配置。</param>
         public DirectPayRequest(DirectPayConfig config)
             : base(config)
         {

@@ -50,13 +50,15 @@
   <ItemGroup>
     <Compile Include="AliBoolean.cs" />
     <Compile Include="AliDateTime.cs" />
+    <Compile Include="AlipayException.cs" />
     <Compile Include="DirectPay\DirectPayBankNotify.cs" />
     <Compile Include="DirectPay\DirectPayConfig.cs" />
     <Compile Include="DirectPay\DirectPayNotifyBase.cs" />
     <Compile Include="Extensions\NameValueCollectionExtension.cs" />
     <Compile Include="INotify.cs" />
     <Compile Include="NotifyBase.cs" />
-    <Compile Include="NotifyService.cs" />
+    <Compile Include="Services\IQueryTimestampService.cs" />
+    <Compile Include="Services\NotifyService.cs" />
     <Compile Include="DirectPay\DirectPayBankRequest.cs" />
     <Compile Include="DirectPay\DirectPayBankReturn.cs" />
     <Compile Include="DirectPay\DirectPayErrorNotify.cs" />
@@ -64,10 +66,12 @@
     <Compile Include="DirectPay\DirectPayRequestBase.cs" />
     <Compile Include="DirectPay\DirectPayReturnBase.cs" />
     <Compile Include="Extensions\IParamProviderExtension.cs" />
-    <Compile Include="INotifyService.cs" />
+    <Compile Include="Services\INotifyService.cs" />
     <Compile Include="ISign.cs" />
     <Compile Include="PayNotifyBase.cs" />
     <Compile Include="PayRequestBase.cs" />
+    <Compile Include="QueryTimestampRequest.cs" />
+    <Compile Include="Services\QueryTimestampService.cs" />
     <Compile Include="Trades\PartnerTradeNotify.cs" />
     <Compile Include="Trades\TradeNofityBase.cs" />
     <Compile Include="Validators\RequiredValidator.cs" />

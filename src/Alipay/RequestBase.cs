@@ -112,7 +112,7 @@ namespace Alipay
         /// 创建并返回支付宝请求链接。
         /// </summary>
         /// <returns></returns>
-        public string CreateUrl()
+        public virtual string CreateUrl()
         {
             // 生成签名
             if (this.Sign == null)

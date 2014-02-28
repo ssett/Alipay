@@ -8,7 +8,7 @@ namespace Alipay.Validators
     /// <summary>
     /// 表示缺少必需参数的异常。
     /// </summary>
-    public class RequiredParameterNotExistException : Exception
+    public class RequiredParameterNotExistException : AlipayException
     {
 
         /// <summary>
