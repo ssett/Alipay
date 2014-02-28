@@ -100,9 +100,9 @@ namespace Alipay
         /// <summary>
         /// 获取交易状态。
         /// </summary>
-        public string TradeStatus
+        public TradeStatus TradeStatus
         {
-            get { return this.GetString("trade_status"); }
+            get { return this.GetEnum<TradeStatus>("trade_status"); }
         }
 
         /// <summary>

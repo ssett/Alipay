@@ -118,7 +118,7 @@ namespace Alipay
         }
 
         /// <summary>
-        /// 获取卖家支付宝账号。
+        /// 获取或设置卖家支付宝账号。
         /// </summary>
         public string SellerEmail
         {
@@ -127,7 +127,7 @@ namespace Alipay
         }
 
         /// <summary>
-        /// 获取买家支付宝账号。
+        /// 获取或设置买家支付宝账号。
         /// </summary>
         public string BuyerEmail
         {
@@ -136,7 +136,7 @@ namespace Alipay
         }
 
         /// <summary>
-        /// 获取卖家支付宝账号对应的支付宝唯一账户号。
+        /// 获取或设置卖家支付宝账号对应的支付宝唯一账户号。
         /// </summary>
         public string SellerID
         {
@@ -145,7 +145,7 @@ namespace Alipay
         }
 
         /// <summary>
-        /// 获取买家支付宝账号对应的支付宝唯一账户号。
+        /// 获取或设置买家支付宝账号对应的支付宝唯一账户号。
         /// </summary>
         public string BuyerID
         {

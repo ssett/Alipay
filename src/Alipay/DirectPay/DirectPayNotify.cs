@@ -15,9 +15,6 @@ namespace Alipay.DirectPay
     /// </summary>
     public class DirectPayNotify : DirectPayNotifyBase, ISign, INotify
     {
-        private NameValueCollection nameValueCollection;
-        private DirectPayConfig config;
-
         /// <summary>
         /// 初始化 Alipay.DirectPay.DirectPayNotify 类的新实例。
         /// </summary>
