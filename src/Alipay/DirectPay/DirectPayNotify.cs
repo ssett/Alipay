@@ -8,6 +8,7 @@ using System.Collections.Specialized;
 using Alipay.Extensions;
 using Alipay.Services;
 using Alipay.Validators;
+using Alipay.Config;
 
 namespace Alipay.DirectPay
 {

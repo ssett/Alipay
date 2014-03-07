@@ -5,6 +5,7 @@ using System.Text;
 using System.Web;
 using Alipay.Extensions;
 using Alipay.Validators;
+using Alipay.Config;
 
 namespace Alipay
 {

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Security.Cryptography;
 using Alipay.Extensions;
+using Alipay.Config;
 
 namespace Alipay
 {

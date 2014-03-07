@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using Alipay.Extensions;
 using Alipay.Validators;
+using Alipay.Config;
 
 namespace Alipay.DirectPay
 {

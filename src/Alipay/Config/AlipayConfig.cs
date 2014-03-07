@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Alipay
+namespace Alipay.Config
 {
     /// <summary>
     /// 表示支付宝配置信息。

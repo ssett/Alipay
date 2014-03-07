@@ -1,4 +1,5 @@
-﻿using Alipay.QueryTimestamp;
+﻿using Alipay.Config;
+using Alipay.QueryTimestamp;
 using System;
 using System.Collections.Generic;
 using System.Linq;
