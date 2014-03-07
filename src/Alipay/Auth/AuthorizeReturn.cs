@@ -7,6 +7,7 @@ using Alipay.Validators;
 using System.Collections.Specialized;
 using Alipay.Services;
 using Alipay.Config;
+using Alipay.Notifications;
 
 namespace Alipay.Auth
 {

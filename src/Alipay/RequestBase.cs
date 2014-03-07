@@ -38,7 +38,7 @@ namespace Alipay
         /// <summary>
         /// 获取请求验证程序。
         /// </summary>
-        protected IList<IValidator> RequestValidators
+        internal IList<IValidator> RequestValidators
         {
             get;
             private set;

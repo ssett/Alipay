@@ -8,7 +8,7 @@ namespace Alipay.Validators
     /// <summary>
     /// 提供请求校验功能。
     /// </summary>
-    public interface IValidator
+    internal interface IValidator
     {
         /// <summary>
         /// 校验请求。

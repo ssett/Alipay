@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SignType.cs" />
     <Compile Include="Utils\AliBoolean.cs" />
     <Compile Include="Utils\AliDateTime.cs" />
     <Compile Include="AlipayException.cs" />
@@ -60,14 +61,14 @@
     <Compile Include="DirectPay\DirectPayBankNotify.cs" />
     <Compile Include="DirectPay\DirectPayNotifyBase.cs" />
     <Compile Include="Extensions\NameValueCollectionExtension.cs" />
-    <Compile Include="INotify.cs" />
+    <Compile Include="Notifications\INotify.cs" />
     <Compile Include="LogisticsPayment.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="LogisticsType.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="NotifyBase.cs" />
+    <Compile Include="Notifications\NotifyBase.cs" />
     <Compile Include="PaymentType.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -89,13 +90,10 @@
     <Compile Include="Extensions\IParamProviderExtension.cs" />
     <Compile Include="Services\INotifyService.cs" />
     <Compile Include="ISign.cs" />
-    <Compile Include="PayNotifyBase.cs" />
+    <Compile Include="Notifications\PayNotifyBase.cs" />
     <Compile Include="PayRequestBase.cs" />
     <Compile Include="QueryTimestamp\QueryTimestampRequest.cs" />
     <Compile Include="Services\QueryTimestampService.cs" />
-    <Compile Include="SignType.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="TradeStatus.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -111,11 +109,11 @@
     <Compile Include="Trades\TradeReturn.cs" />
     <Compile Include="Trades\PartnerTradeRequest.cs" />
     <Compile Include="Trades\TradeRequest.cs" />
-    <Compile Include="PayReturnBase.cs" />
+    <Compile Include="Notifications\PayReturnBase.cs" />
     <Compile Include="AlipayBase.cs" />
     <Compile Include="Config\AlipayConfig.cs" />
     <Compile Include="DirectPay\DirectPayNotify.cs" />
-    <Compile Include="ReturnBase.cs" />
+    <Compile Include="Notifications\ReturnBase.cs" />
     <Compile Include="DirectPay\DirectPayReturn.cs" />
     <Compile Include="RequestBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

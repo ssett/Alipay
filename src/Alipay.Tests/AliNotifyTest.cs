@@ -6,6 +6,7 @@ using System.Web;
 using Alipay.DirectPay;
 using Alipay.Services;
 using Alipay.Config;
+using Alipay.Notifications;
 
 namespace Alipay.Tests
 {

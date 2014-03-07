@@ -5,6 +5,7 @@ using System.Text;
 using Alipay.Extensions;
 using Alipay.Services;
 using Alipay.Config;
+using Alipay.Notifications;
 
 namespace Alipay.Trades
 {

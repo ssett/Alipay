@@ -5,6 +5,7 @@ using System.Text;
 using System.Net;
 using System.IO;
 using Alipay.Config;
+using Alipay.Notifications;
 
 namespace Alipay.Services
 {

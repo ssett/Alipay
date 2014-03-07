@@ -14,7 +14,7 @@ namespace Alipay.Validators
         /// <summary>
         /// 获取或设置检测的参数对象。
         /// </summary>
-        public IParamProvider Provider
+        internal IParamProvider Provider
         {
             get;
             set;

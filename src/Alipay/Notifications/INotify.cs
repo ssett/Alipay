@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Alipay
+namespace Alipay.Notifications
 {
     /// <summary>
     /// 提供与通知请求相关的功能。

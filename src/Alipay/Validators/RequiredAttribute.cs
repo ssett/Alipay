@@ -8,7 +8,7 @@ namespace Alipay.Validators
     /// <summary>
     /// 表示必需参数的自定义属性。
     /// </summary>
-    public class RequiredAttribute : System.Attribute
+    internal class RequiredAttribute : System.Attribute
     {
         /// <summary>
         /// 初始化 Pay.RequiredAttribute 类的新实例。
@@ -19,7 +19,7 @@ namespace Alipay.Validators
         {
             if (string.IsNullOrEmpty(key))
                 throw new ArgumentNullException("key");
-
+            
             this.Key = key;
         }
 

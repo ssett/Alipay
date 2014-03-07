@@ -9,7 +9,7 @@ namespace Alipay.Validators
     /// <summary>
     /// 表示检测必需参数的校验器。
     /// </summary>
-    public class RequiredValidator : IValidator
+    internal class RequiredValidator : IValidator
     {
         /// <summary>
         /// 校验请求。

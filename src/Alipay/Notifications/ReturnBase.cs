@@ -6,7 +6,7 @@ using Alipay.Extensions;
 using Alipay.Validators;
 using Alipay.Config;
 
-namespace Alipay
+namespace Alipay.Notifications
 {
 
     /// <summary>

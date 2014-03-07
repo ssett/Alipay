@@ -7,7 +7,7 @@ using Alipay.Services;
 using Alipay.Validators;
 using Alipay.Config;
 
-namespace Alipay
+namespace Alipay.Notifications
 {
     /// <summary>
     /// 表示支付宝的服务器异步通知。
