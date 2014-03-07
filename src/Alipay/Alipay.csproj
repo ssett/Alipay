@@ -42,6 +42,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Web" />
     <Reference Include="Microsoft.CSharp" />
@@ -54,12 +55,29 @@
     <Compile Include="Auth\AuthorizeReturn.cs" />
     <Compile Include="Auth\AuthorizeRequest.cs" />
     <Compile Include="Auth\UserGrade.cs" />
+    <Compile Include="Config\ConfigSectionHandler.cs" />
+    <Compile Include="Config\XmlAlipayConfig.cs" />
     <Compile Include="DirectPay\DirectPayBankNotify.cs" />
     <Compile Include="DirectPay\DirectPayNotifyBase.cs" />
     <Compile Include="Extensions\NameValueCollectionExtension.cs" />
     <Compile Include="INotify.cs" />
+    <Compile Include="LogisticsPayment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LogisticsType.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="NotifyBase.cs" />
+    <Compile Include="PaymentType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PayMethod.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="QueryTimestamp\QueryTimestampResponse.cs" />
+    <Compile Include="RefundStatus.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Services\IQueryTimestampService.cs" />
     <Compile Include="Services\NotifyService.cs" />
     <Compile Include="DirectPay\DirectPayBankRequest.cs" />
@@ -75,12 +93,17 @@
     <Compile Include="PayRequestBase.cs" />
     <Compile Include="QueryTimestamp\QueryTimestampRequest.cs" />
     <Compile Include="Services\QueryTimestampService.cs" />
+    <Compile Include="SignType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TradeStatus.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Trades\PartnerTradeNotify.cs" />
     <Compile Include="Trades\TradeNofityBase.cs" />
     <Compile Include="Validators\RequiredValidator.cs" />
     <Compile Include="Extensions\IDictionaryExtensions.cs" />
     <Compile Include="IParamProvider.cs" />
-    <Compile Include="SignType.cs" />
     <Compile Include="Trades\PartnerTradeReturn.cs" />
     <Compile Include="Trades\TradeNotify.cs" />
     <Compile Include="Trades\TradeRequestBase.cs" />
@@ -90,18 +113,12 @@
     <Compile Include="Trades\TradeRequest.cs" />
     <Compile Include="PayReturnBase.cs" />
     <Compile Include="AlipayBase.cs" />
-    <Compile Include="AlipayConfig.cs" />
+    <Compile Include="Config\AlipayConfig.cs" />
     <Compile Include="DirectPay\DirectPayNotify.cs" />
     <Compile Include="ReturnBase.cs" />
     <Compile Include="DirectPay\DirectPayReturn.cs" />
     <Compile Include="RequestBase.cs" />
-    <Compile Include="TradeStatus.cs" />
-    <Compile Include="PaymentType.cs" />
-    <Compile Include="PayMethod.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="LogisticsPayment.cs" />
-    <Compile Include="LogisticsType.cs" />
-    <Compile Include="RefundStatus.cs" />
     <Compile Include="Validators\IValidator.cs" />
     <Compile Include="Validators\RequiredAttribute.cs" />
     <Compile Include="Validators\RequiredParameterNotExistException.cs" />

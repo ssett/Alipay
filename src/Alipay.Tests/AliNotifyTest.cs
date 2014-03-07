@@ -5,6 +5,7 @@ using Alipay;
 using System.Web;
 using Alipay.DirectPay;
 using Alipay.Services;
+using Alipay.Config;
 
 namespace Alipay.Tests
 {
@@ -93,7 +94,7 @@ namespace Alipay.Tests
             // Assert - TradeInfo
             Assert.AreEqual("2008102303210710", 
                 target.TradeNo);
-            Assert.AreEqual(TradeStatus.TRADE_FINISHED.ToString(),
+            Assert.AreEqual(TradeStatus.TRADE_FINISHED,
                 target.TradeStatus);
             Assert.AreEqual("外部FP",
                 target.Subject);
@@ -125,7 +126,7 @@ namespace Alipay.Tests
     public class FackNotifyService : INotifyService
     {
         Func<string> _returns;
-
+        
         public FackNotifyService(Func<string> returns)
         {
             _returns = returns;

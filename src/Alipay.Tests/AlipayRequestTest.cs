@@ -12,18 +12,19 @@ namespace Alipay.Tests
         [TestMethod]
         public void Create_DirectPay_Url()
         {
-            var config = new DirectPayConfig
+            var config = new Alipay.Config.AlipayConfig
             {
                 Partner = "2088101568338364",
                 Key = "7d314d22efba4f336fb187697793b9d2",
-                ReturnUrl = "http://api.test.alipay.net/atinterface/receive_return.htm",
-                NotifyUrl = "http://api.test.alipay.net",
-                ErrorNotifyUrl = "http://api.test.alipay.net/atinterface/receive_error_notify.htm",
                 SignType = "MD5",
             };
 
             var request = new DirectPayRequest(config)
             {
+                ReturnUrl = "http://api.test.alipay.net/atinterface/receive_return.htm",
+                NotifyUrl = "http://api.test.alipay.net",
+                ErrorNotifyUrl = "http://api.test.alipay.net/atinterface/receive_error_notify.htm",
+                
                 Subject = "贝尔金护腕式",
                 Body = "美国专业护腕鼠标垫,舒缓式凝胶软垫模拟手腕的自然曲线和运动，创造和缓的GelFlex舒适地带!",
                 ExtendParam = "pnr^MFGXDW|start_ticket_no^123|end_ticket_no^234|b2b_login_name^abc",

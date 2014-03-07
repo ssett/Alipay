@@ -1,4 +1,5 @@
-﻿using Alipay.Extensions;
+﻿using Alipay.Config;
+using Alipay.Extensions;
 using System.Net;
 
 namespace Alipay.DirectPay
@@ -29,7 +30,7 @@ namespace Alipay.DirectPay
         public string ErrorNotifyUrl
         {
             get { return this.GetString("error_notify_url"); }
-            private set { this.Set("error_notify_url", value, 200); }
+            set { this.Set("error_notify_url", value, 200); }
         }
 
         #endregion
