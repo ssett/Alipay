@@ -115,9 +115,9 @@ namespace Alipay.DirectPay
         /// <summary>
         /// 获取或设置自动登录标识。 
         /// </summary>
-        public AliBoolean DefaultLogin
+        public string DefaultLogin
         {
-            get { return this.GetBoolOrDefault("default_login"); }
+            get { return this.GetString("default_login"); }
             set { this.Set("default_login", value.ToString()); }
         }
 

@@ -205,27 +205,27 @@ namespace Alipay.Trades
         /// <summary>
         /// 获取或设置卖家逾期不发货，允许买家退款。
         /// </summary>
-        public AliDateTime TimeoutSellerSend1
+        public string TimeoutSellerSend1
         {
-            get { return this.GetDate("t_s_send_1"); }
+            get { return this.GetString("t_s_send_1"); }
             set { this.Set("t_s_send_1", value); }
         }
 
         /// <summary>
         /// 获取或设置买家逾期不发货，建议买家退款。
         /// </summary>
-        public AliDateTime TimeoutSellerSend2
+        public string TimeoutSellerSend2
         {
-            get { return this.GetDate("t_s_send_2"); }
+            get { return this.GetString("t_s_send_2"); }
             set { this.Set("t_s_send_2", value); }
         }
 
         /// <summary>
         /// 获取或设置买家逾期不确认收货，自动完成交易（平邮）。
         /// </summary>
-        public AliDateTime TimeoutBuyerReceivePost
+        public string TimeoutBuyerReceivePost
         {
-            get { return this.GetDate("t_b_rec_post"); }
+            get { return this.GetString("t_b_rec_post"); }
             set { this.Set("t_b_rec_post", value); }
         }
 
