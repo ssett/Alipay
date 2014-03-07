@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Net;
+using Alipay.Utils;
 
 namespace Alipay.Extensions
 {

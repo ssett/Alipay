@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Alipay
+namespace Alipay.Utils
 {
     /// <summary>
     /// 表示支付宝日期时间。如 90m、24h、7d、1c，等等。

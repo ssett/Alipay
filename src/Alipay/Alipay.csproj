@@ -49,8 +49,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AliBoolean.cs" />
-    <Compile Include="AliDateTime.cs" />
+    <Compile Include="Utils\AliBoolean.cs" />
+    <Compile Include="Utils\AliDateTime.cs" />
     <Compile Include="AlipayException.cs" />
     <Compile Include="Auth\AuthorizeReturn.cs" />
     <Compile Include="Auth\AuthorizeRequest.cs" />
